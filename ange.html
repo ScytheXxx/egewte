@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message for Ange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ANGEEEEEE! Click mo tong button sa baba ne hihi wabyuu</h1>
+        <button onclick="scrollToMessage()">Click me</button>
+    </div>
+
+    <!-- Hidden message section -->
+    <div id="message" class="hidden-container">
+        <h2> Wabyuu soooo much Ange! 💖</h2>
+        <br>
+        <button onclick="scrollToVideo()">Click me Ugh</button>
+    </div>
+
+    <!-- Transparent video container -->
+    <div id="video-section" class="hidden-container">
+        <h2>For you, Ange! 🎥💕</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="HAHAHA.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function scrollToMessage() {
+            document.getElementById('message').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToVideo() {
+            document.getElementById('video-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
